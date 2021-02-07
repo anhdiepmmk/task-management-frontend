@@ -24,7 +24,7 @@ export default class TasksStore {
     const result = await this.tasksService.fetchTasks(this.filters);
 
     if (result) {
-      this.tasks = result.data;
+      this.tasks = result.data.data;
     }
   }
 
